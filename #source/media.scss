@@ -68,6 +68,10 @@ nav ul li {
         padding: 80px 30px;
     }
 
+    @include ex2-u {
+        padding: 60px 30px;
+    }
+
     @include sm-u {
         gap: 0;
     }
@@ -87,7 +91,17 @@ nav ul li {
 
 #section-3 {
     @include lg-u {
-        padding: 80px 35px;
+        padding: 70px 35px;
+    }
+
+    @include ex2-u {
+        padding: 60px 35px;
+    }
+}
+
+#section-3 .service-list svg {
+    @include md-u {
+        margin-bottom: 10px;
     }
 }
 
@@ -202,6 +216,12 @@ footer .top-floor .section-text-1 {
     }
 }
 
+footer .top-floor .block-3 .section-text-1 {
+    @include xs {
+        margin-bottom: 10px;
+    }
+}
+
 footer .top-floor .icon-block {
     @include ex-u {
         justify-content: center;
@@ -280,5 +300,30 @@ footer .ground-floor {
         align-items: center;
         text-align: center;
         gap: 30px;
+    }
+}
+
+.container-services #services .service-list-2 {
+    @include sm-u {
+        padding: 60px 25px;
+    }
+}
+
+.container-services #services .service-list-2 .colums {
+    @include xxl-u {
+        width: 400px;
+        min-width: 20%;
+    }
+}
+
+.container-services #services .service-list-2 .text {
+    @include sm-u {
+        margin-bottom: auto !important;
+    }
+}
+
+.container-services #services .service-list-2 img {
+    @include xs-u {
+        width: 70px;
     }
 }

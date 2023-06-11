@@ -40,7 +40,19 @@
     }
 }
 
+@mixin xxl-u {
+    @media (max-width: map-get($breakpoints, xxl)) {
+        @content;
+    }
+}
+
 // Only
+
+@mixin xs {
+    @media (max-width: map-get($breakpoints, sm)) and (min-width: map-get($breakpoints, xs)) {
+        @content;
+    }
+}
 
 @mixin sm {
     @media (max-width: map-get($breakpoints, md)) and (min-width: map-get($breakpoints, sm)) {
